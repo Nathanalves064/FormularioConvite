@@ -34,6 +34,9 @@
 
   --font-family-sans: "Open Sans", sans-serif;
   --font-family-baloo: "Baloo 2", sans-serif;
+  --font-family-leckerli: "Leckerli One", cursive;
+
+  --text-logo: 400 2.5rem/135% var(--font-family-leckerli);
 
   --heading-md: bold 1.75rem/1.6 var(--font-family-baloo);
   --heading-sm: bold 1.125rem/1.6 var(--font-family-baloo);
@@ -46,6 +49,8 @@
 body{
   overflow: hidden;
 
-  font: var(--font-family-sans);
+  background-color: var(--shape-body);
+
+  font: var(--body-md);
   color: var(--text-body);
 }
