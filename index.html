@@ -200,7 +200,14 @@
               <div class="photo-selector">
                 <label>Foto de capa</label>
                 <div class="droparea-wrapper">
-                  <input type="file" name="photo-input" id="photo-input">
+                  <div class="droparea-inner">
+                    <div class="dropzone">
+                      <input type="file" name="photo-input" id="photo-input">
+                      <img src="assets/icons/upload.svg" alt="Ícone de upload">
+                      <label>Selecionar</label>
+                    </div>
+                    <span id="text-indicator">Nenhum arquivo selecionado</span>
+                  </div>
                 </div>
               </div>
             </div>
