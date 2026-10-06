@@ -1,0 +1,82 @@
+
+.style-selector .input-wrapper{
+  display: flex;
+  position: relative;
+  gap: 1.25rem;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+.switch-text::before {
+  color: var(--text-heading);
+  content: "Escuro";
+}
+
+.input-wrapper:has(.switch-wrapper input:checked) > .switch-text::before {
+  content: "Claro";
+}
+
+.switch-wrapper{
+  display: block;
+  position: relative;
+  align-content: center;
+  width: 4rem;
+  height: 2rem;
+
+  & input,
+  & input:focus,
+  & input:hover{
+    all: unset;
+    opacity: 0;
+  }
+
+  & input:checked + .slider{
+    border: 1px solid var(--input-stroke);
+    background: var(--brand-light);
+
+    section:has(> .switch-text){
+      content: "Claro";
+    }
+  }
+
+  & input:checked + .slider::before{
+    background-color: var(--text-heading);
+    left: calc(100% - (1.5rem + 0.25rem));
+  }
+
+  & span + .switch-text{
+    margin-left: 4.75rem;
+  }
+}
+
+.slider{
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: 999px;
+
+  transition: 0.4s;
+
+  &:before{
+    position: absolute;
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--input-stroke);
+    border-radius: 999px;
+
+    transition: 0.4s;
+  }
+
+  &:hover{
+    outline: 1px solid var(--brand-light);
+    outline-offset: .1px;
+
+    transition: 0s;
+  }
+}
