@@ -74,3 +74,9 @@ legend{
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
+
+.grid-75{
+  display: grid;
+  grid-template-columns: auto 23rem;
+  gap: 1rem;
+}
