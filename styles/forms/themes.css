@@ -1,0 +1,39 @@
+label + .theme-wrapper{
+  margin-top: 1rem;
+}
+
+.theme-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(8.4rem, 1fr));
+  gap: 0.5rem;
+}
+
+.theme-inner{
+  max-width: 8.4rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  background-color: var(--shape-button);
+
+  display: grid;
+  justify-items: center;
+  gap: .5rem;
+  padding: .25rem .25rem .5rem;
+  font: var(--body-sm);
+  color: var(--text-heading);
+
+  & input,
+  & input:focus,
+  & input:hover{
+    all: unset;
+  }
+
+  img{
+    margin: 0;
+    padding: 0;
+    margin-bottom: .5rem;
+    max-width: 100%;
+    max-height: 100%;
+    align-self: center;
+    border-radius: 0.5rem;
+  }
+}
