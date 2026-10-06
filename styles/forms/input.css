@@ -17,7 +17,6 @@ select:focus,
 textarea:focus,
 input[type="date"]:focus-within {
   outline: 1px solid var(--brand-light);
-  border: 1px solid var(--shape-hover);
   outline-offset: .1px;
 }
 
