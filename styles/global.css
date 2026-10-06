@@ -42,8 +42,8 @@
   --heading-sm: bold 1.125rem/1.6 var(--font-family-baloo);
 
   --body-md: 400 1rem/1.6 var(--font-family-sans);
-  --body-sm: 400 0.875rem/1.6 var(--font-family-sans);
-  --body-xs: 400 0.75rem/1.6 var(--font-family-sans);
+  --body-sm: 400 0.875rem/0.2 var(--font-family-sans);
+  --body-xs: 400 0.75rem/0.2 var(--font-family-sans);
 }
 
 body{
@@ -53,4 +53,24 @@ body{
 
   font: var(--body-md);
   color: var(--text-body);
+}
+
+h1{
+  font: var(--heading-md);
+  color: var(--text-heading);
+}
+
+legend{
+  font: var(--heading-sm);
+  color: var(--text-heading);
+}
+
+.grid{
+  display: grid;
+}
+
+.grid-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
 }

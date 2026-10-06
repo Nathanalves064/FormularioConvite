@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Formulário de convite</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="styles/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -27,22 +23,103 @@
         </header>
       </div>
     </aside>
-
     <main>
       <div class="main-container">
+        <h1>Crie seu convite</h1>
         <form method="post" enctype="multipart/form-data">
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt, itaque impedit. Nulla dolorum dignissimos eaque quidem optio? Dignissimos pariatur fugiat vero quibusdam accusantium sapiente aliquid natus vitae optio dicta. Error.</p>
+          <fieldset class="about-event">
+            <div class="section-title">
+              <img src="assets/icons/calendar.svg" alt="Ícone de calendário">
+              <legend>Sobre o evento</legend>
+            </div>
+            <div class="grid">
+              <div class="input-wrapper">
+                <label for="title">Título</label>
+                <input type="text" name="title" id="title" placeholder="Nome do evento">
+              </div>
+              <div class="grid-2">
+                <div class="input-wrapper">
+                  <label for="event-start">Início</label>
+                  <input type="date" name="event-start" id="event-start">
+                </div>
+                <div class="input-wrapper">
+                  <label for="event-end">Fim</label>
+                  <input type="date" name="event-end" id="event-end">
+                </div>
+              </div>
+              <div class="grid-2">
+                <div class="radio-group" role="group">
+                  <span>Tipo</span>
+                  <div class="radio-wrapper">
+                    <div class="radio-inner">
+                      <input type="radio" name="type-event" value="in-person" id="in-person" checked>
+                      <div class="radio-image in-person"></div>
+                      <span>Presencial</span>
+                    </div>
+                  </div>
+                  <div class="radio-wrapper">
+                    <div class="radio-inner online">
+                      <input type="radio" name="type-event" value="online" id="online" aria-label="Online">
+                      <div class="radio-image online"></div>
+                      <span>Online</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="input-wrapper">
+                  <label for="local">Local</label>
+                  <input type="text" name="local" id="local">
+                </div>
+              </div>
+              <div class="textarea-wrapper">
+                <label for="description">Descrição</label>
+                <textarea name="description" id="description" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="personalization grid">
+            <div class="section-title">
+              <img src="assets/icons/paintbrush-vertical.svg" alt="Ícone de pincel">
+              <legend>Personalização</legend>
+            </div>
+            <div class="color-selector">
+              <label for="color">Cor principal</label>
+              <div class="color-wrapper">
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--brand-light);" checked>
+                </div>
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--navy);">
+                </div>
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--purple);">
+                </div>
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--fuschia);">
+                </div>
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--pink);">
+                </div>
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--danger);">
+                </div>
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--orange);">
+                </div>
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--yellow);">
+                </div>
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--lime);">
+                </div>
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--green);">
+                </div>
+                <div class="color-picker">
+                  <input type="radio" name="color" id="color" style="background-color: var(--cyan);">
+                </div>
+              </div>
+            </div>
+          </fieldset>
         </form>
       </div>
     </main>

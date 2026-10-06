@@ -1,0 +1,33 @@
+.color-wrapper{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 2rem);
+  justify-content: space-between;
+  gap: 1rem;
+  margin-block: 1.75rem;
+
+}
+
+.color-wrapper input{
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0.2rem;
+  cursor: pointer;
+  border: 0.4rem solid var(--shape-button);
+  border-radius: 999px;
+
+  &:focus,
+  &:checked{
+    outline: 0.125rem solid var(--brand-light);
+  }
+}
+
+.color-picker{
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  
+}

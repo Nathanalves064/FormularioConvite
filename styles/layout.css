@@ -9,6 +9,13 @@
 main{
   overflow: auto;
   background-color: var(--shape-body);
+  padding-block: 5rem;
+
+  & .main-container{
+    margin-inline: 8rem;
+    justify-content: left;
+    max-width: 35rem;
+  }
 }
 
 aside{
@@ -49,7 +56,7 @@ aside{
       text-align: left;
     }
   }
-  
+
   .background{
     position: absolute;
     inset: 0;
