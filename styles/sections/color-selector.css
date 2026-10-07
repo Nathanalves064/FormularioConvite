@@ -16,6 +16,10 @@
   border: 0.4rem solid var(--shape-button);
   border-radius: 999px;
 
+  &:hover{
+    border-color: var(--shape-hover);
+  }
+
   &:focus,
   &:checked{
     outline: 0.125rem solid var(--brand-light);

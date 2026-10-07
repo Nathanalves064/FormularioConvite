@@ -203,13 +203,60 @@
                   <div class="droparea-inner">
                     <div class="dropzone">
                       <input type="file" name="photo-input" id="photo-input">
-                      <img src="assets/icons/upload.svg" alt="Ícone de upload">
+                      <div id="img-upload"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M7.64645 1.64645C7.84171 1.45118 8.15829 1.45118 8.35355 1.64645L11.6869 4.97978C11.8821 5.17504 11.8821 5.49162 11.6869 5.68689C11.4916 5.88215 11.175 5.88215 10.9798 5.68689L8.5 3.20711V10C8.5 10.2761 8.27614 10.5 8 10.5C7.72386 10.5 7.5 10.2761 7.5 10V3.20711L5.02022 5.68689C4.82496 5.88215 4.50838 5.88215 4.31311 5.68689C4.11785 5.49162 4.11785 5.17504 4.31311 4.97978L7.64645 1.64645ZM2 9.5C2.27614 9.5 2.5 9.72386 2.5 10V12.6667C2.5 12.8877 2.5878 13.0996 2.74408 13.2559C2.90036 13.4122 3.11232 13.5 3.33333 13.5H12.6667C12.8877 13.5 13.0996 13.4122 13.2559 13.2559C13.4122 13.0996 13.5 12.8877 13.5 12.6667V10C13.5 9.72386 13.7239 9.5 14 9.5C14.2761 9.5 14.5 9.72386 14.5 10V12.6667C14.5 13.1529 14.3068 13.6192 13.963 13.963C13.6192 14.3068 13.1529 14.5 12.6667 14.5H3.33333C2.8471 14.5 2.38079 14.3068 2.03697 13.963C1.69315 13.6192 1.5 13.1529 1.5 12.6667V10C1.5 9.72386 1.72386 9.5 2 9.5Z" fill="#59B2FF"/></svg></div>
                       <label>Selecionar</label>
                     </div>
                     <span id="text-indicator">Nenhum arquivo selecionado</span>
                   </div>
                 </div>
               </div>
+            </div>
+          </fieldset>
+          <fieldset class="contact-data grid">
+            <div class="section-title">
+              <img src="assets/icons/contact.svg" alt="Ícone de pincel">
+              <legend>Dados para contato</legend>
+            </div>
+            <div class="grid">
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" name="name" id="name" placeholder="Nome completo" required>
+                <div class="error">
+                  <img src="assets/icons/circle-alert.svg" alt="Ícone de erro">
+                  <small>Campo obrigatório</small>
+                </div>
+              </div>
+              <div class="grid-2">
+                <div class="input-wrapper">
+                  <label for="email">E-mail</label>
+                  <input type="email" name="email" id="email" placeholder="exemplo@email.com">
+                </div>
+                <div class="input-wrapper">
+                  <label for="title">Telefone</label>
+                  <input type="tel" name="phone" id="phone" placeholder="(99) 99999-9999">
+                </div>
+              </div>
+            </div>
+          </fieldset>
+          <div class="divider"></div>
+          <fieldset class="terms-wrapper">
+            <div class="input-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="terms-politics" id="terms-politics">
+              <label>Li e concordo com os <a href="#">Termos e Condições</a> e com a <a href="#">Política de Privacidade</a></label>
+            </div>
+            <div class="input-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="notification-mail" id="notification-mail">
+              <label>Aceito receber atualizações e promoções por e-mail</label>
+            </div>
+            <div class="input-wrapper">
+              <div class="checkbox-image"></div>
+              <input type="checkbox" name="notification-sms" id="notification-sms">
+              <label>Aceito receber atualizações e promoções por SMS</label>
+            </div>
+            <div class="actions-wrapper">
+              <button class="submit-button"><img src="assets/icons/ticket.svg" alt="">Gerar Imagem</button>
             </div>
           </fieldset>
         </form>
