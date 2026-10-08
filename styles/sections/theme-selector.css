@@ -10,7 +10,7 @@ label + .theme-wrapper{
 
 .theme-inner{
   position: relative;
-  max-width: 8.4rem;
+  width: minmax(8.4rem, 1fr);
   border: 1px solid var(--input-stroke);
   border-radius: 0.5rem;
   background-color: var(--shape-button);
